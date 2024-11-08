@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Creating an object with the specified properties
+var user = {
+    name: "Alina",
+    email: "alinalodhi@gmail.com",
+    password: "password123",
+    age: 25,
+    gender: "female",
+    city: "New York",
+    country: "USA"
+};
+
+// Function to check if a property exists in the object
+function checkProperty(obj, property) {
+    return obj.hasOwnProperty(property);
+}
+
+// Checking if 'age' and 'country' properties exist
+document.write("age" in user ?  "Age property exists" : "Age property does not exist");
+document.write("country" in user ?  "Country property exists" : "Country property does not exist");
+
+// Checking if 'firstName' and 'lastName' properties exist
+document.write("firstName" in user ?  "FirstName property exists"  :  "FirstName property does not exist");
+document.write("lastName" in user ?  "LastName property exists"  :  "LastName property does not exist");
+
+    </script>
+</body>
+</html>
